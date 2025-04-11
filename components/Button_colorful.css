@@ -1,0 +1,98 @@
+.btn-1 {
+    display: block;
+    cursor: pointer;
+    color: black;
+    margin: 0 auto;
+    width: 8rem;
+    white-space: nowrap;
+    position: relative;
+    text-decoration: none;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 0.125rem;
+    isolation: isolate;
+  }
+  
+  .btn-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(
+      115deg,
+      #4fcf70,
+      #fad648,
+      #a767e5,
+      #12bcfe,
+      #44ce7b
+    );
+    background-size: 25% 100%;
+    animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop
+      2s linear infinite;
+    animation-play-state: paused;
+    translate: -5% 0%;
+    transition: translate 0.25s ease-out, opacity 0.175s ease-out;
+    opacity: 1;
+    animation-play-state: running;
+    transition-duration: 1s;
+    translate: 0% 0%;
+  }
+  
+  @keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+    to {
+      transform: translateX(-25%);
+    }
+  }
+  
+.btn-1 span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  height: 100%;
+  text-align: center;
+}
+.btn-1 span:hover{
+  color: #adff2f;
+}
+  
+.btn-1 span.disabled:hover {
+  color: white;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 80%; /* Use relative width */
+  max-width: 12.5rem; /* Set a maximum width in rem */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.75rem; /* Increased border radius in rem */
+  padding: 1rem; /* Use relative padding in rem */
+  position: absolute;
+  z-index: 1;
+  bottom: 150%; /* Adjusted position for responsiveness */
+  left: 50%;
+  transform: translateX(-50%); /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 0.7;
+}
+
+  
+ 
+  

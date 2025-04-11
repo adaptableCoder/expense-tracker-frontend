@@ -1,0 +1,65 @@
+.btn-2 {
+    scale: 1;
+    padding: 0.5rem 1.5rem;
+    width: 8rem;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    z-index: 1;
+    overflow: hidden;
+}
+  
+.btn-2:hover {
+    color: black;
+}
+  
+.btn-2:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+  
+.btn-2:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btn-2:hover .hover\:colors-primary-black {
+    --lord-icon-primary: #000;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip-text {
+    visibility: hidden;
+    width: 80%; /* Use relative width */
+    max-width: 12.5rem; /* Set a maximum width in rem */
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.75rem; /* Increased border radius in rem */
+    padding: 1rem; /* Use relative padding in rem */
+    position: absolute;
+    z-index: 1;
+    bottom: 150%; /* Adjusted position for responsiveness */
+    left: 50%;
+    transform: translateX(-50%); /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 0.7;
+}
