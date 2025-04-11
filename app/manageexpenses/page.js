@@ -113,8 +113,8 @@ const ManageExpenses = () => {
             ) : (
                 <div className="w-full flex flex-col items-center gap-3">
                     {expenses.map((expense, index) => (
-                      <div className="w-[100%] flex gap-3">
-                        <div key={index} className="w-[90%] bg-[#2C2C2C] p-3 rounded-2xl flex flex-col">
+                      <div key={index} className="w-[100%] flex gap-3">
+                        <div key={`expense-${index}`} className="w-[90%] bg-[#2C2C2C] p-3 rounded-2xl flex flex-col">
                           <div className="w-full flex justify-between items-center">
                               <span className="text-md font-bold text-xl text-[#00FF87]">{expense.category}</span>
                               <span className="font-semibold text-xl text-[#00FF87]">₹{expense.amount}</span>
