@@ -300,7 +300,7 @@ const TrackExpenses = () => {
 
             <div className="w-[100%] h-[80dvh] flex flex-col item-center">
                 <div className="w-[100%] py-6">
-                    <h2 className="text-4xl text-white text-center">This Month's Expenses</h2>
+                    <h2 className="text-4xl text-white text-center">This Month&apos;s Expenses</h2>
                 </div>
 
                 <div className="w-[100%] h-full flex overflow-hidden">
@@ -321,7 +321,7 @@ const TrackExpenses = () => {
                     <div className="w-[50%] h-full flex items-center justify-center">
                         <Card className="w-[90%]">
                             <CardHeader className="flex items-center justify-between space-y-0 pb-2">
-                                <CardTitle className="text-2xl font-bold text-black text-center">Category-wise this Month's Expenses</CardTitle>
+                                <CardTitle className="text-2xl font-bold text-black text-center">Category-wise this Month&apos;s Expenses</CardTitle>
                             </CardHeader>
                             <CardContent className="pb-0">
                                 <ChartContainer
@@ -372,7 +372,7 @@ const TrackExpenses = () => {
                             </CardContent>
                             <CardFooter className="flex-col gap-2 text-sm">
                                 <div className="leading-none text-muted-foreground">
-                                    Showing this month's total expenses till now
+                                    Showing this month&apos;s total expenses till now
                                 </div>
                             </CardFooter>
                         </Card>

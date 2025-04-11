@@ -120,7 +120,6 @@ const ManageExpenses = () => {
                               <span className="font-semibold text-xl text-[#00FF87]">₹{expense.amount}</span>
                           </div>
                           <div className="w-full flex flex-col text-sm text-[#E0E0E0]">
-                          {/* <div className="w-full flex flex-col text-md text-black"> */}
                               <span className="font-semibold">~ {expense.mode}</span>
                               <span>{expense.datetime}</span>
                           </div>

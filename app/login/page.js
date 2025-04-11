@@ -37,11 +37,11 @@ const Login = () => {
       setloginForm({ username: '', password: '' })
 
     } catch (error) {
-      console.error('Fetch error:', error);
-      if (error.message.includes('ERR_CONNECTION_REFUSED')) {
+      console.error("Fetch error:", error);
+      if (error.message.includes("ERR_CONNECTION_REFUSED")) {
         toast.error('Unable to connect to the server. Please try again later.');
       } else {
-        toast.error('An error occurred while submitting the details :(');
+        toast.error("An error occurred while submitting the details. Please try again.");
       }
     }
   }
@@ -81,7 +81,7 @@ const Login = () => {
               <Button_slice text="Login" disabled={isButtonDisabled} tooltip="Please fill in the details"/>
             </button>
           </form>
-          <h2 className="text-[#008000] text-lg">Don't have an account?</h2>
+          <h2 className="text-[#008000] text-lg">Don&apos;t have an account?</h2>
           <Link href="/signup"><Button_colorful text="Sign Up" icon_code="hrjifpbq"/></Link>
         </div>
       </div>
